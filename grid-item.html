@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 40px 50px auto 50px 40px;
+      grid-template-rows: 25% 100px auto;
+      background: yellowgreen;
+      height: 100vh;
+    }
+
+    .card-1 {
+      background: tomato;
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card-1">card 1</div>
+  </div>
+</body>
+</html>

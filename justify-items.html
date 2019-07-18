@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      justify-items: end;
+      background: yellowgreen;
+    }
+
+    .container > div {
+      background: tomato;
+    }
+
+    .container > div.self-justified{
+      justify-self: stretch;
+      background: violet;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>card 1</div>
+    <div>card 2</div>
+    <div class="self-justified">card 3</div>
+    <div>card 4</div>
+    <div>card 5</div>
+    <div>card 6</div>
+  </div>
+</body>
+</html>

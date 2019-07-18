@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 40px 50px auto 50px 40px;
+      grid-template-rows: 25% 100px auto;
+    }
+
+    .grid > div {
+      background: pink;
+    }
+
+    .grid > div:nth-child(7) {
+      background: aqua;
+      background-size: cover;
+      grid-column: col-start 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div>card 1</div>
+    <div>card 2</div>
+    <div>card 3</div>
+    <div>card 4</div>
+    <div>card 5</div>
+    <div>card 6</div>
+    <div>card 7</div>
+    <div>card 8</div>
+    <div>card 9</div>
+    <div>card 10</div>
+    <div>card 11</div>
+    <div>card 12</div>
+    <div><img width="100%" src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzEwNC84MTkvb3JpZ2luYWwvY3V0ZS1raXR0ZW4uanBn" alt=""></div>
+    <div>card 14</div>
+    <div>card 15 asdmlmasdnlk alskdlkasd laksd</div>
+  </div>
+</body>
+</html>
